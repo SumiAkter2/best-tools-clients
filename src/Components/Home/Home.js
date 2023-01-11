@@ -6,6 +6,7 @@ import Banner from "./Banner";
 import GetReview from "./GetReview";
 import HotDeals from "./HotDeals";
 import Products from "./Products";
+import Subscribe from "./Subscribe";
 import Summary from "./Summary";
 
 const Home = () => {
@@ -18,7 +19,8 @@ const Home = () => {
           <Summary />
           <About />
           <HotDeals/>
-          <Arrival />
+      <Arrival />
+      <Subscribe/>
           </div>
   );
 };
