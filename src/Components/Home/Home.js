@@ -1,10 +1,12 @@
 import React from "react";
 import Reviews from "../Reviews/Reviews";
 import About from "./About";
+import Arrival from "./Arrival";
 import Banner from "./Banner";
 import GetReview from "./GetReview";
 import Products from "./Products";
-import Summary from './Summary'
+import Summary from "./Summary";
+
 const Home = () => {
   return (
     <div>
@@ -13,8 +15,9 @@ const Home = () => {
           <GetReview />
           <Reviews />
           <Summary />
-          <About
-    </div>
+          <About />
+          <Arrival />
+          </div>
   );
 };
 

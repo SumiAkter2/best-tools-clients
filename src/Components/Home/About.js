@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../asset/depositphotos_202173158-stock-photo-male-hands-holding-power-drill.jpg";
+import img from "../../asset/depositphotos_202173158-stock-photo-male-hands-holding-power-drill.jpg";
 const About = () => {
   return (
     <div>
