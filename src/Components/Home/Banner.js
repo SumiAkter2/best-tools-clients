@@ -1,23 +1,25 @@
 import React from "react";
 // import banner from '../asset/ronix-tools-Nn2mg1lUbZc-unsplash.jpg'
-import img1 from "../asset/img19.jpg";
-import img11 from "../asset/img8.jpg";
-import img12 from "../asset/img15.jpg";
-import img7 from "../asset/img18.jpg";
+import img1 from "../../asset/img19.jpg";
+import img11 from "../../asset/img8.jpg";
+import img12 from "../../asset/img15.jpg";
+import img7 from "../../asset/img18.jpg";
+import img9 from "../../asset/img9.jpg";
 
-const Bannar = () => {
+const Banner = () => {
   return (
     <div className="relative z-10">
       <div
         className="hero  h-[80vh]"
-        style={{ backgroundImage: "url('img9.jpg')" }}
+        style={{ backgroundImage: `url(${img9})` }}
       >
         <div className="hero-overlay  bg-opacity-20"></div>
         <div className="hero-content text-center text-secondary">
-          <div className="max-w-md">
-            <h1 className=" text-4xl text-white font-bold">
+          <div className="">
+            <h1 className=" lg:text-5xl text-3xl  text-white font-bold">
               We Provide The Best Product
             </h1>
+            {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sunt deleniti magni corrupti earum! Est aliquam temporibus corporis dolores quibusdam soluta, recusandae vero modi quia reprehenderit ea voluptatibus, dolor quod.</p> */}
           </div>
         </div>
       </div>
@@ -68,3 +70,4 @@ const Bannar = () => {
     </div>
   );
 };
+export default Banner;

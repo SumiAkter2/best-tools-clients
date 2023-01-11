@@ -163,3 +163,6 @@ const Navbar = ({ children }) => {
         </div>
       </div>
     </div>
+  );
+};
+export default Navbar;
