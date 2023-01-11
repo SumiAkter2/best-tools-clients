@@ -10,7 +10,7 @@ const Summary = () => {
       <h1 className="text-pink-400 font-bold uppercase text-4xl text-center">
         Your Satisfaction is Our success
       </h1>
-      <div className="stats stats-vertical lg:stats-horizontal shadow  lg:mx-auto">
+      <div className="stats stats-vertical lg:stats-horizontal shadow   ">
         <div className="stat mx-auto">
           <img style={{ width: "150px" }} src={img1} alt="" />
           <div className="stat-title">Growth</div>
