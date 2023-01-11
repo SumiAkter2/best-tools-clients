@@ -4,6 +4,7 @@ import About from "./About";
 import Arrival from "./Arrival";
 import Banner from "./Banner";
 import GetReview from "./GetReview";
+import HotDeals from "./HotDeals";
 import Products from "./Products";
 import Summary from "./Summary";
 
@@ -16,6 +17,7 @@ const Home = () => {
           <Reviews />
           <Summary />
           <About />
+          <HotDeals/>
           <Arrival />
           </div>
   );
