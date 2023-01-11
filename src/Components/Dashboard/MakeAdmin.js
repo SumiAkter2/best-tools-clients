@@ -1,8 +1,6 @@
-import Spinner from "../Spinner";
-// import React, { useEffect, useState } from 'react';
-// import { useAuthState } from 'react-firebase-hooks/auth';
+
 import { useQuery } from "react-query";
-// import AllUser from './AllUser';
+import Spinner from "../Spinner/Spinner";
 import Users from "./Users";
 
 const MakeAdmin = () => {

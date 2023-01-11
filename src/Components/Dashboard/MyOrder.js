@@ -5,7 +5,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import auth from "../../firebase.init";
-import Spinner from "../Spinner";
+import Spinner from "../Spinner/Spinner";
 import ShowMyItem from "./ShowMyItem";
 const MyOrder = () => {
   const [userData, setUserData] = useState([]);

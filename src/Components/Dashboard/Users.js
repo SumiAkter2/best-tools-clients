@@ -1,7 +1,7 @@
 import React from "react";
 import { useQuery } from "react-query";
 
-import Spinner from "../Spinner";
+import Spinner from "../Spinner/Spinner";
 import UserRow from "./UserRow";
 
 const Users = () => {

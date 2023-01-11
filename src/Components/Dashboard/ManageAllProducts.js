@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import swal from "sweetalert";
-import Spinner from "../Spinner";
+import Spinner from "../Spinner/Spinner";
 import AllProducts from "./AllProducts";
 
 const ManageAllProducts = () => {

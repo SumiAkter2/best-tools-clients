@@ -6,7 +6,7 @@ import Loading from "../Shared/Loading";
 import useAdmin from "../../hooks/useAdmin";
 import { signOut } from "firebase/auth";
 import auth from "../../firebase.init";
-import Spinner from "../Spinner";
+import Spinner from "../Spinner/Spinner";
 
 const RequireAdmin = ({ children }) => {
   const [user, loading] = useAuthState(auth);

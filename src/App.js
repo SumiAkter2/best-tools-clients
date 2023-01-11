@@ -2,7 +2,6 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 // import MyPortfolio from "./Components/Dashboard/";
 import Home from "./Components/Home/Home";
-import RequireAuth from "./Components/RequireAuth";
 import DashBoard from "./Components/Dashboard/DashBoard";
 import MyOrder from "./Components/Dashboard/MyOrder";
 import ManageOrder from "./Components/Dashboard/ManageOrder";
@@ -16,6 +15,8 @@ import Summary from "./Components/Home/Summary";
 import NotFound from "./Components/NotFound";
 import Footer from "./Footer";
 import { ToastContainer } from "react-toastify";
+import ProductDetails from "./Components/Home/ProductDetails";
+import RequireAuth from "./Components/RequireAuth";
 
 function App() {
   return (
@@ -47,23 +48,23 @@ function App() {
               </RequireAuth>
             }
           >
-            <Route path="order" element={<MyOrder />}></Route>
-            <Route path="manageorder" element={<ManageOrder />}></Route>
+            {/* <Route path="order" element={<MyOrder />}></Route> */}
+            {/* <Route path="manageorder" element={<ManageOrder />}></Route> */}
             <Route
               path="allProducts"
-              element={<ManageAllProducts></ManageAllProducts>}
+              // element={<ManageAllProducts></ManageAllProducts>}
             ></Route>
             <Route
               path="addProducts"
               element={<AddProducts></AddProducts>}
             ></Route>
-            <Route path="admin" element={<MakeAdmin></MakeAdmin>}></Route>
-            <Route index element={<MyProfile></MyProfile>}></Route>
+            {/* <Route path="admin" element={<MakeAdmin></MakeAdmin>}></Route> */}
+            {/* <Route index element={<MyProfile></MyProfile>}></Route> */}
             <Route
               path="updateprofile"
-              element={<UpdateProfile></UpdateProfile>}
+              // element={<UpdateProfile></UpdateProfile>}
             ></Route>
-            <Route path="review" element={<AddReview></AddReview>}></Route>
+            {/* <Route path="review" element={<AddReview></AddReview>}></Route> */}
           </Route>
           <Route path="summary" element={<Summary />}></Route>
           <Route path="*" element={<NotFound />}></Route>

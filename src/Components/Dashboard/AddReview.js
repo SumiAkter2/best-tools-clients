@@ -1,11 +1,11 @@
 import axios from "axios";
 import React from "react";
 import swal from "sweetalert";
-
-import Reviews from "../Reviews";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
-import GetReview from "../GetReview";
+import GetReview from "../Home/GetReview";
+import Reviews from "../Reviews/Reviews";
+
 
 const AddReview = () => {
   const { user } = useAuthState(auth);
@@ -91,7 +91,7 @@ const AddReview = () => {
         </form>
       </div>
       <GetReview></GetReview>
-      {/* <Reviews></Reviews> */}
+      <Reviews></Reviews>
     </div>
   );
 };

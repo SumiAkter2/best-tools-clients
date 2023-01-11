@@ -1,5 +1,5 @@
 import React from "react";
-import emoji from "../../asset/sad emoji.png";
+import emoji from "../asset/sad emoji.png";
 const NotFound = () => {
   return (
     <div className="h-[80vh] mt-12">

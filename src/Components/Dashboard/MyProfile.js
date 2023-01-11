@@ -1,4 +1,4 @@
-import Spinner from "../Spinner";
+import Spinner from "../Spinner/Spinner";
 import { useQuery } from "react-query";
 import ProfileUser from "./ProfileUser";
 
