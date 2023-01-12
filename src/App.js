@@ -13,6 +13,7 @@ import UpdateProfile from "./Components/Dashboard/UpdateProfile";
 import AddReview from "./Components/Dashboard/AddReview";
 import Summary from "./Components/Home/Summary";
 import NotFound from "./Components/NotFound";
+import Navbar from "./Components/Home/Navbar";
 import Footer from "./Footer";
 import { ToastContainer } from "react-toastify";
 import ProductDetails from "./Components/Home/ProductDetails";
@@ -21,8 +22,8 @@ import RequireAuth from "./Components/RequireAuth";
 function App() {
   return (
     <div className="App">
-      {/* <Navbar> */}
-       <Routes>
+      <Navbar>
+        <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           {/* <Route path="blogs" element={<Blogs></Blogs>}></Route> */}
           {/* <Route path="login" element={<LogIn></LogIn>}></Route> */}
@@ -70,9 +71,9 @@ function App() {
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
         <Footer></Footer>
-    
-      <ToastContainer></ToastContainer>
-      {/* </Navbar> */}
+
+        <ToastContainer></ToastContainer>
+      </Navbar>
     </div>
   );
 }
