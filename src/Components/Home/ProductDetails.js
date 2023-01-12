@@ -44,7 +44,7 @@ const ProductDetails = () => {
       status: "Pending",
     };
     // console.log(order);
-    fetch(`https://best-tools-server-production.up.railway.app/order`, {
+    fetch(`https://best-tools-server-production-28d9.up.railway.app/order`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -67,7 +67,7 @@ const ProductDetails = () => {
   };
 
   useEffect(() => {
-    const url = `https://best-tools-server-production.up.railway.app/products/${productId}`;
+    const url = `https://best-tools-server-production-28d9.up.railway.app/products/${productId}`;
 
     fetch(url)
       .then((res) => res.json())

@@ -13,7 +13,7 @@ const MyOrder = () => {
   const [user, loading] = useAuthState(auth);
   const [product, setProduct] = useState([]);
   useEffect(() => {
-    const url = `https://best-tools-server-production.up.railway.app/order/${user?.email}`;
+    const url = `https://best-tools-server-production-28d9.up.railway.app/order/${user?.email}`;
 
     fetch(url)
       .then((res) => res.json())
@@ -34,7 +34,7 @@ const MyOrder = () => {
       if (willDelete) {
         axios
           .delete(
-            `https://best-tools-server-production.up.railway.app/deleteProducts/${id}`
+            `https://best-tools-server-production-28d9.up.railway.app/deleteProducts/${id}`
           )
           .then((res) => {
             if (res.data.deletedCount) {

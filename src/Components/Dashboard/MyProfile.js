@@ -4,7 +4,7 @@ import ProfileUser from "./ProfileUser";
 
 const MyProfile = () => {
   const { data: users, isLoading } = useQuery("users", () =>
-    fetch(`https://best-tools-server-production.up.railway.app/user`, {
+    fetch(`https://best-tools-server-production-28d9.up.railway.app/user`, {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -26,9 +26,9 @@ const MyProfile = () => {
         <p>Id </p>
       </div>
 
-      {/* {users?.map((user, index) => (
+      {users?.map((user, index) => (
         <ProfileUser key={user._id} user={user} index={index}></ProfileUser>
-      ))} */}
+      ))}
     </div>
   );
 };

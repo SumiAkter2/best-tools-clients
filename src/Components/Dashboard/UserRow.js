@@ -5,7 +5,7 @@ const UserRow = ({ user, refetch }) => {
   const { email, role } = user;
   const makeAdmin = () => {
     fetch(
-      `https://best-tools-server-production.up.railway.app/user/admin/${email}`,
+      `https://best-tools-server-production-28d9.up.railway.app/user/admin/${email}`,
       {
         method: "PUT",
         headers: {

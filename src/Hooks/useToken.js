@@ -7,7 +7,7 @@ const useToken = (user) => {
     const currentUser = { email: email };
     if (email) {
       fetch(
-        `https://best-tools-server-production.up.railway.app/user/${email}`,
+        `https://best-tools-server-production-28d9.up.railway.app/user/${email}`,
         {
           method: "PUT",
           headers: {

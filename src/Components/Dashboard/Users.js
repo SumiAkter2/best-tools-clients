@@ -10,7 +10,7 @@ const Users = () => {
     isLoading,
     refetch,
   } = useQuery("users", () =>
-    fetch(`https://best-tools-server-production.up.railway.app/user`, {
+    fetch(`https://best-tools-server-production-28d9.up.railway.app/user`, {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

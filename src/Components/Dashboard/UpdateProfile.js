@@ -18,7 +18,7 @@ const UpdateProfile = () => {
     if (Object.keys(input).length > 0) {
       axios
         .post(
-          "https://best-tools-server-production.up.railway.app/update",
+          "https://best-tools-server-production-28d9.up.railway.app/update",
           input
         )
         .then((res) => {

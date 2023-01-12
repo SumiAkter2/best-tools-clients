@@ -14,7 +14,7 @@ const ManageOrder = () => {
   const [product, setProduct] = useState([]);
 
   useEffect(() => {
-    const url = `https://best-tools-server-production.up.railway.app/orderDetails`;
+    const url = `https://best-tools-server-production-28d9.up.railway.app/orderDetails`;
 
     fetch(url)
       .then((res) => res.json())
@@ -34,7 +34,7 @@ const ManageOrder = () => {
       if (willDelete) {
         axios
           .delete(
-            `https://best-tools-server-production.up.railway.app/deleteProducts/${id}`
+            `https://best-tools-server-production-28d9.up.railway.app/deleteProducts/${id}`
           )
           .then((res) => {
             if (res.data.deletedCount) {

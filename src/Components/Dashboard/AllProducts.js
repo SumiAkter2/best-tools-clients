@@ -17,7 +17,7 @@ const AllProducts = ({ index, product }) => {
       if (willDelete) {
         axios
           .delete(
-            `https://best-tools-server-production.up.railway.app/product/${id}`
+            `https://best-tools-server-production-28d9.up.railway.app/product/${id}`
           )
           .then((res) => {
             if (res.data.deletedCount) {

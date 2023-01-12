@@ -7,7 +7,7 @@ const GetReview = () => {
   const [reviews, setReview] = useState([]);
   useEffect(() => {
     axios
-      .get(`https://best-tools-server-production.up.railway.app/review`)
+      .get(`https://best-tools-server-production-28d9.up.railway.app/review`)
       .then((res) => {
         setReview(res.data);
       });

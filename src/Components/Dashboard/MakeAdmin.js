@@ -1,11 +1,10 @@
-
 import { useQuery } from "react-query";
 import Spinner from "../Spinner/Spinner";
 import Users from "./Users";
 
 const MakeAdmin = () => {
   const { data: users, isLoading } = useQuery("users", () =>
-    fetch(`https://best-tools-server-production.up.railway.app/user`, {
+    fetch(`https://best-tools-server-production-28d9.up.railway.app/user`, {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

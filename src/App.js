@@ -50,7 +50,7 @@ function App() {
               </RequireAuth>
             }
           >
-          {/* <Route path="order" element={<MyOrder />}></Route> */}
+          <Route path="order" element={<MyOrder />}></Route>
           {/* <Route path="manageorder" element={<ManageOrder />}></Route> */}
           {/* <Route
               path="allProducts"
@@ -61,12 +61,12 @@ function App() {
               element={<AddProducts></AddProducts>}
             ></Route> */}
           {/* <Route path="admin" element={<MakeAdmin></MakeAdmin>}></Route> */}
-          <Route index element={<MyProfile></MyProfile>}></Route>
+          {/* <Route index element={<MyProfile></MyProfile>}></Route> */}
           {/* <Route
               path="updateprofile"
               element={<UpdateProfile></UpdateProfile>}
             ></Route> */}
-          {/* <Route path="review" element={<AddReview></AddReview>}></Route> */}
+          <Route path="review" element={<AddReview></AddReview>}></Route>
           </Route>
           <Route path="summary" element={<Summary />}></Route>
           <Route path="*" element={<NotFound />}></Route>

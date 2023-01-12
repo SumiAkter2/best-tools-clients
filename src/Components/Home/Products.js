@@ -6,7 +6,7 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch(`https://best-tools-server-production.up.railway.app/products`)
+    fetch(`https://best-tools-server-production-28d9.up.railway.app/products`)
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, [products]);

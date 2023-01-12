@@ -7,7 +7,7 @@ const useAdmin = (user) => {
     const email = user?.email;
     if (email) {
       fetch(
-        `https://best-tools-server-production.up.railway.app/admin/${email}`,
+        `https://best-tools-server-production-28d9.up.railway.app/admin/${email}`,
         {
           method: "GET",
           headers: {

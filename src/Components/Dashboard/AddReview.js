@@ -6,7 +6,6 @@ import auth from "../../firebase.init";
 import GetReview from "../Home/GetReview";
 import Reviews from "../Reviews/Reviews";
 
-
 const AddReview = () => {
   const { user } = useAuthState(auth);
   const [value, setValue] = React.useState(2);
@@ -23,7 +22,7 @@ const AddReview = () => {
     e.preventDefault();
     axios
       .post(
-        `https://best-tools-server-production.up.railway.app/review`,
+        `https://best-tools-server-production-28d9.up.railway.app/review`,
         dataValues
       )
       .then((res) => {
@@ -90,8 +89,8 @@ const AddReview = () => {
           </button>
         </form>
       </div>
-      <GetReview></GetReview>
-      <Reviews></Reviews>
+      {/* <GetReview></GetReview> */}
+      {/* <Reviews></Reviews> */}
     </div>
   );
 };
