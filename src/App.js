@@ -18,6 +18,8 @@ import Footer from "./Footer";
 import { ToastContainer } from "react-toastify";
 import ProductDetails from "./Components/Home/ProductDetails";
 import RequireAuth from "./Components/RequireAuth";
+import Login from "./Components/SocialLogIn/LogIn";
+import SignIn from "./Components/SocialLogIn/SignIn";
 
 function App() {
   return (
@@ -26,47 +28,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           {/* <Route path="blogs" element={<Blogs></Blogs>}></Route> */}
-          {/* <Route path="login" element={<LogIn></LogIn>}></Route> */}
-          {/* <Route path="signin" element={<SignIn></SignIn>}></Route> */}
-          {/* <Route
-            path="myportfolio"
-            element={<MyPortfolio></MyPortfolio>}
-          ></Route> */}
-          <Route
-            path="products/:productId"
-            element={
-              <RequireAuth>
-                <ProductDetails></ProductDetails>
-              </RequireAuth>
-            }
-          ></Route>
+          <Route path="login" element={<Login />}></Route>
+          <Route path="signin" element={<SignIn></SignIn>}></Route>
 
-          <Route
-            path="dashboard"
-            element={
-              <RequireAuth>
-                <DashBoard />
-              </RequireAuth>
-            }
-          >
-            {/* <Route path="order" element={<MyOrder />}></Route> */}
-            {/* <Route path="manageorder" element={<ManageOrder />}></Route> */}
-            <Route
-              path="allProducts"
-              // element={<ManageAllProducts></ManageAllProducts>}
-            ></Route>
-            <Route
-              path="addProducts"
-              element={<AddProducts></AddProducts>}
-            ></Route>
-            {/* <Route path="admin" element={<MakeAdmin></MakeAdmin>}></Route> */}
-            {/* <Route index element={<MyProfile></MyProfile>}></Route> */}
-            <Route
-              path="updateprofile"
-              // element={<UpdateProfile></UpdateProfile>}
-            ></Route>
-            {/* <Route path="review" element={<AddReview></AddReview>}></Route> */}
-          </Route>
           <Route path="summary" element={<Summary />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>

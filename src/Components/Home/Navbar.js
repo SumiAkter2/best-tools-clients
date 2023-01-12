@@ -63,9 +63,6 @@ const Navbar = ({ children }) => {
                   </NavLink>
                 </li>
 
-                {/* {
-                                    user && <li><NavLink className='rounded-lg  my-2' to='/purchase'>Purchase</NavLink></li>
-                                } */}
                 {user && (
                   <li>
                     <NavLink className="rounded-lg  my-2" to="/dashboard">
@@ -114,9 +111,7 @@ const Navbar = ({ children }) => {
                 Blogs
               </NavLink>
             </li>
-            {/* {
-                            user && <li><NavLink className='rounded-lg  my-2' to='/purchase'>Purchase</NavLink></li>
-                        } */}
+
             {user && (
               <li>
                 <NavLink className="rounded-lg  my-2" to="/dashboard">
