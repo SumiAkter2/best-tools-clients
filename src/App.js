@@ -51,16 +51,16 @@ function App() {
             }
           >
           <Route path="order" element={<MyOrder />}></Route>
-          {/* <Route path="manageorder" element={<ManageOrder />}></Route> */}
-          {/* <Route
+          <Route path="manageorder" element={<ManageOrder />}></Route>
+          <Route
               path="allProducts"
               element={<ManageAllProducts></ManageAllProducts>}
-            ></Route> */}
-          {/* <Route
+            ></Route>
+          <Route
               path="addProducts"
               element={<AddProducts></AddProducts>}
-            ></Route> */}
-          {/* <Route path="admin" element={<MakeAdmin></MakeAdmin>}></Route> */}
+            ></Route>
+          <Route path="admin" element={<MakeAdmin></MakeAdmin>}></Route>
           {/* <Route index element={<MyProfile></MyProfile>}></Route> */}
           {/* <Route
               path="updateprofile"

@@ -70,11 +70,11 @@ const ManageOrder = () => {
             </tr>
           </thead>
 
-          {product.map((p) => (
+          {product.map((p,index) => (
             <AdminOrderDetail
               key={p._id}
               handleDelete={handleDelete}
-              p={p}
+              p={p} index={index}
             ></AdminOrderDetail>
           ))}
         </table>

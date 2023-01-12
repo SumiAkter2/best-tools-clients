@@ -1,6 +1,6 @@
 import React from "react";
 
-const AdminOrderDetail = ({ p, handleDelete }) => {
+const AdminOrderDetail = ({ p, handleDelete,index }) => {
   return (
     <div>
       {/* <p ></p>
@@ -13,7 +13,7 @@ const AdminOrderDetail = ({ p, handleDelete }) => {
       <table>
         <tbody>
           <tr>
-            <th>1</th>
+            <th>{index + 1}</th>
             <th>{p.email}</th>
             <td>{p.name}</td>
             <td>{p.product_name}</td>
