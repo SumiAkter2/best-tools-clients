@@ -21,7 +21,7 @@ const SignIn = () => {
 
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
-  const [token] = useIdToken(user);
+  // const [token] = useIdToken(user);
 
   const navigate = useNavigate();
 
@@ -39,9 +39,9 @@ const SignIn = () => {
     );
   }
 
-  if (token) {
-    navigate("/dashboard");
-  }
+  // if (token) {
+  //   navigate("/dashboard");
+  // }
 
   const onSubmit = async (data) => {
     await createUserWithEmailAndPassword(data.email, data.password);

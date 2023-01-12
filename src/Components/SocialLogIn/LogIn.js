@@ -23,7 +23,7 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   let from = location.state?.from?.pathname || "/dashboard";
-  const [token] = useIdToken(user || user1);
+  // const [token] = useIdToken(user || user1);
   useEffect(() => {
     if (user || user1) {
       navigate(from, { replace: true });
@@ -32,10 +32,9 @@ const Login = () => {
 
   const onSubmit = (data) => {
     // data.preventDefault();
-
     signInWithEmailAndPassword(data.email, data.password);
     console.log(data.email, data.password);
-    // navigate('/dashboard');
+    navigate('/dashboard');
   };
 
   let signInError;

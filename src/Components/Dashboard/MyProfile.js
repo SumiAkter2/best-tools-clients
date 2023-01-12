@@ -14,7 +14,7 @@ const MyProfile = () => {
   if (isLoading) {
     return <Spinner></Spinner>;
   }
-  console.log(users);
+  // console.log(users);
 
   return (
     <div>
@@ -26,9 +26,9 @@ const MyProfile = () => {
         <p>Id </p>
       </div>
 
-      {users?.map((user, index) => (
+      {/* {users?.map((user, index) => (
         <ProfileUser key={user._id} user={user} index={index}></ProfileUser>
-      ))}
+      ))} */}
     </div>
   );
 };
